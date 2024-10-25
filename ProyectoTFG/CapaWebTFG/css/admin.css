@@ -1,0 +1,145 @@
+﻿/* Estilo general del body */
+body {
+    background-color: #4F1504;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #F4A261;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Navegación */
+nav {
+    border-radius: 10px;
+    position: fixed; /* Fija el nav en la parte superior de la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el nav ocupe todo el ancho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #F4A261; /* Asegúrate de que tenga un fondo sólido */
+    z-index: 1000; /* Eleva el nav por encima de otros elementos */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Añade una sombra opcional */
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+a.nav {
+    font-size: 20px; /* Ajustado para el tamaño del texto */
+    text-decoration: none;
+    color: #fef4db;
+}
+
+a.nav:hover {
+    color: #f5db9b;
+}
+
+/* Botón de iniciar sesión */
+.boton_iniciar_sesion {
+    width: 175px;
+    font-size: 20px;
+    background-color: #d87d37;
+    color: #fef4db;
+    padding: 15px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Suaviza el cambio de color */
+}
+#boton_agregar, .btn-editar, .btn-borrar {
+    font-size: 15px;
+    background-color: #d87d37;
+    color: #fef4db;
+    border-radius: 10px;
+}
+.boton_iniciar_sesion:hover {
+    background-color: #f87e02;
+}
+
+/* Contenido principal */
+.container {
+    margin-top:70px; /* Espacio para el nav fijo */
+    color: #F4A261;
+}
+
+
+
+/* Tabla */
+table {
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: 30px; /* Espacio superior */
+}
+
+
+.table th, .table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd; /* Bordes de las celdas */
+    color: #f5db9b;
+}
+
+.table th {
+    background-color: #F4A261; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+}
+
+
+/* Footer */
+footer {
+    text-align: right;
+    color: #F4A261;
+    padding: 20px;
+}
+.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed; /* Mantener el modal en una posición fija */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Permitir desplazamiento si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe; /* Fondo blanco para el contenido del modal */
+    margin: auto; /* Centramos el modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 400px; /* Máximo ancho del modal */
+    position: relative; /* Posición relativa para centrar el contenido */
+    top: 50%; /* Posicionamos en el medio de la pantalla */
+    transform: translateY(-50%); /* Ajustamos para centrar verticalmente */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

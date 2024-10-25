@@ -1,0 +1,115 @@
+﻿/* Estilo general */
+body {
+    background-color: #4F1504;
+    font-family: Arial, sans-serif;
+    margin-top: 70px; /* Evita que el contenido quede debajo del nav fijo */
+}
+
+/* Header */
+header {
+    background-color: #F4A261;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    background-image: url("../views/images/logo.png");
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+}
+
+/* Barra de navegación */
+nav {
+    border-radius: 10px;
+    position: fixed; /* Fija el nav en la parte superior de la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el nav ocupe todo el ancho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #F4A261; /* Asegúrate de que tenga un fondo sólido */
+    z-index: 1000; /* Eleva el nav por encima de otros elementos */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Añade una sombra opcional */
+}
+
+/* Estilos de navegación */
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+a.nav {
+    font-size: 30px;
+    text-decoration: none;
+    color: #fef4db;
+}
+
+    a.nav:hover {
+        color: #f5db9b;
+    }
+
+/* Botón de inicio de sesión */
+.boton_iniciar_sesion {
+    width: 175px;
+    font-size: 20px;
+    background-color: #d87d37;
+    color: #fef4db;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Suaviza el cambio de color */
+}
+
+    .boton_iniciar_sesion:hover {
+        background-color: #f87e02;
+    }
+
+/* Contenido principal */
+.main-content {
+    text-align: center;
+    margin: 50px 0;
+    color: #F4A261;
+}
+
+/* Casillas cuadradas */
+.cuadrados {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.cuadrado {
+    background-color: #F4A261;
+    padding: 70px;
+    border-radius: 15px;
+    width: 400px;
+    transition: transform 0.3s, border 0.3s; /* Suaviza la escala y el borde */
+}
+
+    .cuadrado:hover {
+        transform: scale(1.10);
+        border: 1px solid black;
+    }
+
+    .cuadrado h3,
+    .cuadrado p {
+        color: #fef4db;
+    }
+
+/* Footer */
+footer {
+    text-align: right;
+    color: #F4A261;
+}
